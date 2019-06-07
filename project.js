@@ -5,6 +5,13 @@ var server=new Hapi.Server({
     host:'localhost',
     port:4000
 });
+server.route({
+  method:"GET",
+  path:"/",
+  handler:(request,reply)=>{
+      return "Welcome to HAPI Server";
+  }
+})
 
 //section 1 
 
